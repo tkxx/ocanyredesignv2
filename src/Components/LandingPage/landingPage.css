@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.header-main {
+	background: #0e0a4d;
+	height: 25rem;
+	width: 100%;
+}
+
+#circles {
+	height: 10rem;
+	width: 10rem;
+}
+
+#white-circle {
+	background: #fef8f6;
+	border-radius: 50%;
+	height: 10rem;
+	width: 10rem;
+}
+
+#red-circle {
+	background: #ff3d3d;
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	float: right;
+}
+
+#teal-circle {
+	background: #92c7ce;
+	border-radius: 50%;
+	height: 12rem;
+	width: 12rem;
+}
+
+#chapter-name {
+	font-family: 'Lato', sans-serif;
+	color: #ff3d3d;
+	transform: rotate(-90deg);
+	float: left;
+	padding-top: 24%;
+	padding-right: 5%;
+}
+
+.title-text-box {
+	padding-top: 10%;
+	margin-right: 25%;
+	margin-left: 26%;
+}
+
+#oca-title {
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+}
+
+.accent-font {
+	font-family: 'Lato', sans-serif;
+	color: #ff3d3d;
+}
+
+.description {
+	font-family: 'Lato', sans-serif;
+	color: #fef8f6;
+}
