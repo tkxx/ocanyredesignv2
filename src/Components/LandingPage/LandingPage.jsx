@@ -1,4 +1,5 @@
 import React from 'react';
+import circle from '../../images/circle.svg';
 import './landingPage.css';
 
 function LandingPage(props) {
