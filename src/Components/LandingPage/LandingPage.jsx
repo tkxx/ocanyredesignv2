@@ -1,16 +1,10 @@
 import React from 'react';
-import circle from '../../images/circle.svg';
 import './landingPage.css';
 
 function LandingPage(props) {
 	return (
 		<React.Fragment>
-			<div class="header-main">
-				<div class="circles">
-					<span id="white-circle" />
-					<span id="red-circle" />
-					<span id="teal-circle" />
-				</div>
+			<section class="header-main">
 				<h3 id="chapter-name">New York City Chapter</h3>
 				<div class="title-text-box">
 					<h2 id="oca-title">
@@ -23,8 +17,17 @@ function LandingPage(props) {
 					</p>
 					<button>Learn More</button>
 				</div>
-			</div>
-			{/* Circle icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
+			</section>
+			<section id="ongoing-programs-box">
+				<h2 id="programs-text">Ongoing Programs</h2>
+				<p class="programs-description">
+					OCA-NY is dedicated to fostering leadership among youth, spreading awareness of Hate Crimes and
+					civil rights issues in our community, and developing friendships among members.
+					<p>
+						We have a number of established programs that recur annually, but there is always room for more.
+					</p>
+				</p>
+			</section>
 		</React.Fragment>
 	);
 }

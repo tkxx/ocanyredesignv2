@@ -6,26 +6,6 @@
 	width: 100%;
 }
 
-#circles {
-	height: 10rem;
-	width: 10rem;
-}
-
-#white-circle {
-	background: #fef8f6;
-	border-radius: 50%;
-	height: 10rem;
-	width: 10rem;
-}
-
-#red-circle {
-	background: #ff3d3d;
-	border-radius: 50%;
-	height: 15rem;
-	width: 15rem;
-	float: right;
-}
-
 #teal-circle {
 	background: #92c7ce;
 	border-radius: 50%;
@@ -40,6 +20,7 @@
 	float: left;
 	padding-top: 24%;
 	padding-right: 5%;
+	font-weight: 400;
 }
 
 .title-text-box {
@@ -51,6 +32,8 @@
 #oca-title {
 	font-family: 'Lato', sans-serif;
 	color: #ffffff;
+	font-weight: 900;
+	font-size: 1.7rem;
 }
 
 .accent-font {
@@ -61,4 +44,25 @@
 .description {
 	font-family: 'Lato', sans-serif;
 	color: #fef8f6;
+}
+
+/* Ongoing Programs Section */
+#ongoing-programs-box {
+	background: #ffffff;
+	color: #0e0a4d;
+	font-family: 'Lato', sans-serif;
+	margin-left: 21.5%;
+	margin-right: 25%;
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: row;
+}
+
+#programs-text {
+	font-weight: 900;
+	padding-right: 3rem;
+}
+
+#programs-description {
+	font-size: 0.5rem;
 }
