@@ -18,15 +18,23 @@ function LandingPage(props) {
 					<button>Learn More</button>
 				</div>
 			</section>
-			<section id="ongoing-programs-box">
-				<h2 id="programs-text">Ongoing Programs</h2>
-				<p class="programs-description">
-					OCA-NY is dedicated to fostering leadership among youth, spreading awareness of Hate Crimes and
-					civil rights issues in our community, and developing friendships among members.
-					<p>
-						We have a number of established programs that recur annually, but there is always room for more.
+			<section id="ongoing-programs">
+				<div id="ongoing-programs-box">
+					<h2 id="programs-text">Ongoing Programs</h2>
+					<p class="programs-description">
+						OCA-NY is dedicated to fostering leadership among youth, spreading awareness of Hate Crimes and
+						civil rights issues in our community, and developing friendships among members.
+						<p>
+							We have a number of established programs that recur annually, but there is always room for
+							more.
+						</p>
 					</p>
-				</p>
+				</div>
+				<div id="programs-boxes">
+					<div id="programs-boxes-1">Voter Outreach</div>
+					<div id="programs-boxes-2">Hate Crimes Prevention Art Project</div>
+					<div id="programs-boxes-3">Mentoring A/P/A Professionals</div>
+				</div>
 			</section>
 		</React.Fragment>
 	);

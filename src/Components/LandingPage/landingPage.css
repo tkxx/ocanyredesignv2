@@ -47,13 +47,17 @@
 }
 
 /* Ongoing Programs Section */
+
+#ongoing-programs {
+	margin-left: 21.5%;
+	margin-right: 25%;
+	padding-top: 2rem;
+}
+
 #ongoing-programs-box {
 	background: #ffffff;
 	color: #0e0a4d;
 	font-family: 'Lato', sans-serif;
-	margin-left: 21.5%;
-	margin-right: 25%;
-	padding-top: 2rem;
 	display: flex;
 	flex-direction: row;
 }
@@ -65,4 +69,14 @@
 
 #programs-description {
 	font-size: 0.5rem;
+}
+
+#programs-boxes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#programs-boxes-1 {
+	border: 1.5px solid #0e0a4d;
 }
