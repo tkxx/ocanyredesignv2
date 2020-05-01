@@ -31,10 +31,19 @@ function LandingPage(props) {
 					</p>
 				</div>
 				<div id="programs-boxes">
-					<div id="programs-boxes-1">Voter Outreach</div>
-					<div id="programs-boxes-2">Hate Crimes Prevention Art Project</div>
-					<div id="programs-boxes-3">Mentoring A/P/A Professionals</div>
+					<div id="programs-boxes-1">
+						<div class="dark-blue-square" />Voter Outreach
+					</div>
+					<div id="programs-boxes-2">
+						<div class="dark-blue-square" />Hate Crimes Prevention Art Project
+					</div>
+					<div id="programs-boxes-3">
+						<div class="dark-blue-square" />Mentoring A/P/A Professionals
+					</div>
 				</div>
+			</section>
+			<section id="latest-news-section">
+				<h2 id="news-title">Latest News</h2>
 			</section>
 		</React.Fragment>
 	);
