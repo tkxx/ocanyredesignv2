@@ -44,6 +44,10 @@ function LandingPage(props) {
 			</section>
 			<section id="latest-news-section">
 				<h2 id="news-title">Latest News</h2>
+				<div id="picture-and-description">
+					<p>Image Placeholder</p>
+					<p>Description Placeholder from WP</p>
+				</div>
 			</section>
 		</React.Fragment>
 	);
