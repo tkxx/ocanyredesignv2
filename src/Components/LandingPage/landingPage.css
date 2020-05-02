@@ -142,3 +142,8 @@
 	display: flex;
 	flex-direction: row;
 }
+
+.involved-columns {
+	display: flex;
+	flex-direction: column;
+}
