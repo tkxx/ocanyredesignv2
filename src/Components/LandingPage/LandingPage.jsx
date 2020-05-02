@@ -49,6 +49,34 @@ function LandingPage(props) {
 					<p>Description Placeholder from WP</p>
 				</div>
 			</section>
+			<section id="get-involved-section">
+				<div class="involved-columns">
+					<h3>Get Involved</h3>
+					<ul>
+						<li>
+							<a>Volunteer Today</a>
+						</li>
+						<li>
+							<a>Become a Member</a>
+						</li>
+						<li>
+							<a>Intern for Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="involved-columns">
+					<h3>Stay in Touch</h3>
+					<p>Join our mailing list to get updates on OCA-NY's programs, events and more!</p>
+				</div>
+				<div class="involved-columns">
+					<h3>Get In Touch</h3>
+					<ul>
+						<li>@OCANY_CHAPTER</li>
+						<li>@OCANEWYORK</li>
+						<li>info@ocany.org</li>
+					</ul>
+				</div>
+			</section>
 		</React.Fragment>
 	);
 }
