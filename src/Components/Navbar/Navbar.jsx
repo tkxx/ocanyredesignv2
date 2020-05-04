@@ -29,7 +29,7 @@ function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/contact">Contact</Link>
+						<Link to="/contact">Get Involved</Link>
 					</li>
 					<li>
 						<button class="cta-button cta-word">Donate</button>
