@@ -1,7 +1,7 @@
 import React from 'react';
 import '../MissionPage/missionPage.css';
 
-function missionPage(props) {
+function MissionPage(props) {
 	return (
 		<React.Fragment>
 			<section id="mission-header">
@@ -33,4 +33,4 @@ function missionPage(props) {
 	);
 }
 
-export default missionPage;
+export default MissionPage;
