@@ -1,4 +1,5 @@
 import React from 'react';
+import '../NewsPage/newsPage.css';
 
 class NewsPage extends React.Component {
 	constructor() {
@@ -33,7 +34,11 @@ class NewsPage extends React.Component {
 		});
 
 		let newsContent = this.state.newsContent.map((newsContent, index) => {
-			return <div key={index}>{newsContent.content.view}</div>;
+			return <div key={index}>{newsContent.content.rendered}</div>;
+		});
+
+		let newsExcerpt = this.state.newsContent.map((newsContent, index) => {
+			return <div key={index}>{newsContent.excerpt.rendered}</div>;
 		});
 
 		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
@@ -46,10 +51,17 @@ class NewsPage extends React.Component {
 
 		return (
 			<React.Fragment>
-				<h1>News Page</h1>
-				<div>{newsTitle}</div>
-				<div>{newsPhoto}</div>
-				<div>{newsContent}</div>
+				<section id="news-header">
+					<h1 className="header-titles news-page-title">News</h1>
+				</section>
+				<section id="news-body">
+					<div className="news-posts">
+						<div id="news-component-title">{newsTitle}</div>
+						<div id="news-component-excerpt">{newsExcerpt}</div>
+						<div id="news-component-photo">{newsPhoto}</div>
+						<div id="news-component-content">{newsContent}</div>
+					</div>
+				</section>
 			</React.Fragment>
 		);
 	}

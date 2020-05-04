@@ -1,0 +1,21 @@
+/* Mission Header */
+
+#mission-header {
+	background: #0e0a4d;
+	height: 15rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mission-page-title {
+	color: #fef8f6;
+}
+
+#mission-body {
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 5%;
+}

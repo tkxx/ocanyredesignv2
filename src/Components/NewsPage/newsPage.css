@@ -1,0 +1,29 @@
+/* Header Section */
+
+#news-header {
+	background: #0e0a4d;
+	height: 15rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.news-page-title {
+	color: #fef8f6;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+/* News Body Section */
+
+#news-body {
+	background-color: #fef8f6;
+}
+
+.news-posts {
+	background-color: #ffffff;
+	margin-left: 20%;
+	margin-right: 20%;
+}

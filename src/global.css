@@ -13,6 +13,17 @@ button {
 	width: 100px;
 }
 
+.header-titles {
+	font-size: 2.5rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	/* margin-top: 0px; */
+}
+
+.accent-color {
+	color: #ff3d3d;
+}
+
 /* Navigation  */
 
 .navbar-main {
