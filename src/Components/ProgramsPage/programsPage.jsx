@@ -1,6 +1,6 @@
 import React from 'react';
 
-function programsPage(props) {
+function ProgramsPage(props) {
 	return (
 		<React.Fragment>
 			<h1>Programs Page</h1>
@@ -8,4 +8,4 @@ function programsPage(props) {
 	);
 }
 
-export default programsPage;
+export default ProgramsPage;

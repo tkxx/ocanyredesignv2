@@ -1,27 +1,45 @@
 import React from 'react';
 
-class newsPage extends React.Component {
+class NewsPage extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			news: []
+			newsContent: [],
+			newsImage: []
 		};
 	}
 
 	componentDidMount = () => {
 		let newsURL = 'http://localhost:8888/ynaco/wp-json/wp/v2/news';
+		let newsPic = 'http://localhost:8888/ynaco/wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
+			console.log(response);
 			this.setState({
-				news: response
+				newsContent: response
+			});
+		});
+
+		fetch(newsPic).then((response) => response.json()).then((response) => {
+			console.log(response);
+			this.setState({
+				newsImage: response
 			});
 		});
 	};
 
 	render() {
-		let news = this.state.news.map((news, index) => {
+		let newsTitle = this.state.newsContent.map((newsContent, index) => {
+			return <div key={index}>{newsContent.title.rendered}</div>;
+		});
+
+		let newsContent = this.state.newsContent.map((newsContent, index) => {
+			return <div key={index}>{newsContent.content.view}</div>;
+		});
+
+		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
 			return (
 				<div key={index}>
-					<img src={news.content.featured_media} alt="news.content.featured_media" />
+					<img src={newsImage.media_details.sizes.medium.source_url} alt={newsImage.caption.alt_text} />
 				</div>
 			);
 		});
@@ -29,10 +47,12 @@ class newsPage extends React.Component {
 		return (
 			<React.Fragment>
 				<h1>News Page</h1>
-				<div>{news}</div>
+				<div>{newsTitle}</div>
+				<div>{newsPhoto}</div>
+				<div>{newsContent}</div>
 			</React.Fragment>
 		);
 	}
 }
 
-export default newsPage;
+export default NewsPage;

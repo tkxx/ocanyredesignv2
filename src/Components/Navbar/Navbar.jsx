@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../images/OCANYlogo.svg';
+import searchIcon from '../../images/searchIcon.svg';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -31,7 +32,10 @@ function Navbar() {
 						<Link to="/contact">Contact</Link>
 					</li>
 					<li>
-						<button class="cta-button">Donate</button>
+						<button class="cta-button cta-word">Donate</button>
+					</li>
+					<li>
+						<img src={searchIcon} alt="search icon" id="search-icon" />
 					</li>
 				</ul>
 			</div>

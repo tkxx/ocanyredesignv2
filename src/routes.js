@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import MissionPage from './Components/MissionPage/missionPage';
-import ProgramsPage from './Components/ProgramsPage/programsPage';
-import NewsPage from './Components/NewsPage/newsPage';
-import ContactPage from './Components/ContactPage/contactPage';
-import LandingPage from './Components/LandingPage/landingPage';
+import MissionPage from './Components/MissionPage/MissionPage';
+import ProgramsPage from './Components/ProgramsPage/ProgramsPage';
+import NewsPage from './Components/NewsPage/NewsPage';
+import ContactPage from './Components/ContactPage/ContactPage';
+import LandingPage from './Components/LandingPage/LandingPage';
 
 export default (
 	<Switch>
