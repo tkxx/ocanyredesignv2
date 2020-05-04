@@ -1,15 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
-import LandingPage from './Components/LandingPage/LandingPage';
+import LandingPage from './Components/LandingPage/landingPage';
+import { BrowserRouter as Router } from 'react-router-dom';
+import routes from '../src/routes';
 import './global.css';
 
 function App(props) {
 	return (
-		<React.Fragment>
-			<Navbar />
-			<LandingPage />
-		</React.Fragment>
+		<Router>
+			<div className="App">
+				<Navbar />
+				{routes}
+			</div>
+		</Router>
 	);
 }
 
