@@ -1,11 +1,17 @@
 import React from 'react';
+import Logo from '../../images/OCANYlogo.svg';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
 	return (
-		<div class="navbar-main">
-			<div class="navbar-main-menu">
-				<ul class="navbar-main-menu-links">
+		<div className="navbar-main">
+			<div className="navbar-main-menu">
+				<ul className="navbar-main-menu-links">
+					<li>
+						<Link to="/" title="Home">
+							<img src={Logo} alt="OCA NY logo" id="logo" />
+						</Link>
+					</li>
 					<li>
 						<Link to="/mission" title="Our Mission">
 							Our Mission

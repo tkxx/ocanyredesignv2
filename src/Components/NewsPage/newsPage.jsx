@@ -21,7 +21,7 @@ class newsPage extends React.Component {
 		let news = this.state.news.map((news, index) => {
 			return (
 				<div key={index}>
-					<img src={news.content.featured_media} />
+					<img src={news.content.featured_media} alt="news.content.featured_media" />
 				</div>
 			);
 		});
@@ -29,7 +29,7 @@ class newsPage extends React.Component {
 		return (
 			<React.Fragment>
 				<h1>News Page</h1>
-				<div>Posts</div>
+				<div>{news}</div>
 			</React.Fragment>
 		);
 	}
