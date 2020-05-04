@@ -108,6 +108,8 @@ class LandingPage extends React.Component {
 						</div>
 					</div>
 				</section>
+
+				{/* LATEST NEWS */}
 				<section id="latest-news-section">
 					<h2 id="news-title">Latest News</h2>
 					<span id="picture-and-description">
@@ -118,6 +120,8 @@ class LandingPage extends React.Component {
 						</div>
 					</span>
 				</section>
+
+				{/* GET INVOLVED */}
 				<section id="get-involved-section">
 					<div className="involved-columns">
 						<h3>Get Involved</h3>
