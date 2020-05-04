@@ -87,6 +87,11 @@ a:hover {
 	text-decoration-color: #ff3d3d;
 }
 
+a:active {
+	text-decoration: underline;
+	text-decoration-color: #ff3d3d;
+}
+
 /* Buttons */
 
 .cta-button {

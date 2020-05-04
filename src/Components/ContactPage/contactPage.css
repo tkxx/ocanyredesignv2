@@ -1,0 +1,67 @@
+#contact-header {
+	background: #92c7ce;
+	height: 15rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.white-accent-color {
+	color: #ffffff;
+}
+
+.blue-accent-color {
+	color: #0e0a4d;
+}
+
+#contact-body {
+	display: flex;
+	flex-direction: column;
+}
+
+#body-boxes {
+	display: flex;
+	flex-direction: row;
+}
+
+#cta-boxes {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.three-div-boxes {
+	margin-left: 20%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: .27rem;
+	padding-bottom: .27rem;
+}
+
+.blue-box {
+	background-color: #0e0a4d;
+}
+
+.light-gray-box {
+	background-color: #fef8f6;
+}
+
+.teal-box {
+	background-color: #92c7ce;
+}
+
+#get-involved-boxes {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.two-div-boxes {
+	margin-right: 25%;
+	margin-bottom: 5%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 5%;
+	padding-right: 5%;
+}
