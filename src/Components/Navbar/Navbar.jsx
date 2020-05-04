@@ -34,9 +34,6 @@ function Navbar() {
 					<li>
 						<button class="cta-button cta-word">Donate</button>
 					</li>
-					<li>
-						<img src={searchIcon} alt="search icon" id="search-icon" />
-					</li>
 				</ul>
 			</div>
 		</div>
