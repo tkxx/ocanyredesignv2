@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+/* MAIN HEADER */
+
 #header-main {
 	background: #0e0a4d;
 	height: 25rem;
@@ -39,7 +41,7 @@
 	color: #fef8f6;
 }
 
-/* Ongoing Programs Section */
+/* ONGOING PROGRAMS SECTION */
 
 #ongoing-programs {
 	margin-left: 21.5%;
