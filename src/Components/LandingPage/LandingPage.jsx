@@ -54,6 +54,7 @@ class LandingPage extends React.Component {
 
 		return (
 			<React.Fragment>
+				{/* MAIN HEADER */}
 				<section id="header-main">
 					<h3 id="chapter-name">New York City Chapter</h3>
 					<div className="title-text-box">
@@ -68,6 +69,9 @@ class LandingPage extends React.Component {
 						<button>Learn More</button>
 					</div>
 				</section>
+
+				{/* ONGOING PROGRAMS */}
+
 				<section id="ongoing-programs">
 					<div id="ongoing-programs-box">
 						<h2 id="programs-text">Ongoing Programs</h2>
@@ -80,6 +84,9 @@ class LandingPage extends React.Component {
 							</p>
 						</p>
 					</div>
+
+					{/* SHOWCASE PROGRAMMING */}
+
 					<div id="programs-boxes">
 						<div id="programs-boxes-1">
 							<span className="dark-blue-square">

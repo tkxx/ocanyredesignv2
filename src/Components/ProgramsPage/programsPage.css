@@ -20,15 +20,39 @@
 
 .program-blue-square-div {
 	background-color: #0e0a4d;
-	height: 3rem;
-	width: 3rem;
+	height: auto;
+	width: 15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.program-icons-lg {
+	height: 4rem;
+	width: 4rem;
 }
 
 .program-div-boxes {
 	background-color: #fef8f6;
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-#programs-div-excerpt {
-	font-size: 0.9rem;
+/* .programs-div-title {
+	font-family: 'Lato', sans-serif;
+} */
+
+.programs-div-excerpt {
+	font-size: 0.85rem;
 	line-height: 1.3rem;
+	letter-spacing: 0.7px;
+	color: #0e0a4d;
+}
+
+#program-explanations {
+	padding-left: 5%;
+	padding-right: 5%;
 }
