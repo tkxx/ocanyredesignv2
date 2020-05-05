@@ -71,13 +71,13 @@ function contactPage(props) {
 							<p>
 								Name{' '}
 								<span>
-									<input type="text" placeholder="Name" />
+									<input type="text" placeholder="Name" className="mailing-list-input" />
 								</span>
 							</p>
 							<p>
 								Email<span>
 									{' '}
-									<input type="email" placeholder="Email Address" />
+									<input type="email" placeholder="Email Address" className="mailing-list-input" />
 								</span>
 							</p>
 							<p>
