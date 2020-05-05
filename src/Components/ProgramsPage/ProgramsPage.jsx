@@ -51,6 +51,9 @@ class ProgramsPage extends React.Component {
 								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
 								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
 							</p>
+							<p>
+								<a>Read More</a>
+							</p>
 						</div>
 					</div>
 
@@ -68,6 +71,9 @@ class ProgramsPage extends React.Component {
 								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
 								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
 							</p>
+							<p>
+								<a>Read More</a>
+							</p>
 						</div>
 					</div>
 
@@ -84,6 +90,9 @@ class ProgramsPage extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
 								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
+							</p>
+							<p>
+								<a>Read More</a>
 							</p>
 						</div>
 					</div>
