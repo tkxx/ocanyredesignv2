@@ -68,13 +68,13 @@ function contactPage(props) {
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua.{' '}
 							</p>
-							<p>
+							<p className="blue-accent-color bold">
 								Name{' '}
 								<span>
 									<input type="text" placeholder="Name" className="mailing-list-input" />
 								</span>
 							</p>
-							<p>
+							<p className="blue-accent-color bold">
 								Email<span>
 									{' '}
 									<input type="email" placeholder="Email Address" className="mailing-list-input" />
