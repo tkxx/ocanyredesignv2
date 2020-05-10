@@ -124,7 +124,7 @@ class LandingPage extends React.Component {
 				{/* GET INVOLVED */}
 				<section id="get-involved-section">
 					<div className="involved-columns">
-						<h3>Get Involved</h3>
+						<h3 className="blue-accent-color">Get Involved</h3>
 						<ul className="bullet-margin">
 							<li>
 								<a>Volunteer Today</a>
@@ -139,7 +139,7 @@ class LandingPage extends React.Component {
 						</ul>
 					</div>
 					<div className="involved-middle-column">
-						<h3>Stay in Touch</h3>
+						<h3 className="blue-accent-color">Stay in Touch</h3>
 						<p className="small-text">
 							Join our mailing list to get updates on OCA-NY's programs, events and more!
 						</p>
@@ -150,7 +150,7 @@ class LandingPage extends React.Component {
 						</div>
 					</div>
 					<div className="involved-columns">
-						<h3>Get In Touch</h3>
+						<h3 className="blue-accent-color">Get In Touch</h3>
 						<ul className="bullet-margin">
 							<li className="sm-bulletpoints">
 								<img src={facebookIcon} alt="facebook icon" className="social-media-icons" />{' '}

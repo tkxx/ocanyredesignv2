@@ -88,3 +88,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+// Hardcoding site URL.
+define('WP_HOME', 'http://ocanywp.org');
+define('WP_SITEURL', 'http://ocanywp.org');

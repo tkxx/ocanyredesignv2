@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../NewsPage/newsPage.css';
 
 class NewsPage extends React.Component {
@@ -11,8 +12,8 @@ class NewsPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://localhost:8888/ynaco/wp-json/wp/v2/news';
-		let newsPic = 'http://localhost:8888/ynaco/wp-json/wp/v2/media';
+		let newsURL = 'http://ocanywp.org/wp-json/wp/v2/news';
+		let newsPic = 'http://ocanywp.org/wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
@@ -56,10 +57,13 @@ class NewsPage extends React.Component {
 				</section>
 				<section id="news-body">
 					<div className="news-posts">
-						<div id="news-component-title">{newsTitle}</div>
-						<div id="news-component-excerpt">{newsExcerpt}</div>
-						<div id="news-component-photo">{newsPhoto}</div>
-						<div id="news-component-content">{newsContent}</div>
+						<div>
+							{newsTitle}
+							{newsExcerpt}
+							{newsPhoto}
+							{newsContent}
+							<Link to="/news/:slug">Read More</Link>
+						</div>
 					</div>
 				</section>
 			</React.Fragment>
