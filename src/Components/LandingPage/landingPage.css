@@ -218,3 +218,120 @@
 	margin-right: 10px;
 	color: #92c7ce;
 }
+
+/* Media Queries */
+
+/* iPhone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	/* Main Header Section */
+	#header-main {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	#chapter-name {
+		transform: rotate(0deg);
+		padding-top: 0;
+		padding-right: 0;
+		margin-left: 0%;
+		float: left;
+		font-size: 1rem;
+	}
+
+	#oca-title {
+		font-size: 1.3rem;
+	}
+
+	.title-text-box {
+		padding-top: 0;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	button {
+		background-color: #fef8f6;
+		font-size: 0.6rem;
+		height: 20px;
+		width: 90px;
+	}
+
+	/* Ongoing Programs Section */
+
+	#ongoing-programs {
+		padding-top: 1rem;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#ongoing-programs-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#programs-boxes {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5%;
+	}
+
+	#programs-boxes-1 {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3%;
+	}
+
+	#programs-boxes-2 {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3%;
+	}
+
+	#programs-boxes-3 {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	/* News Section */
+
+	#latest-news-section {
+		flex-direction: column;
+	}
+
+	#news-title {
+		padding-top: 1rem;
+		margin-left: 15%;
+	}
+
+	/* Get Involved Section */
+
+	#get-involved-section {
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 15%;
+		padding-right: 0;
+		padding-top: 1rem;
+		justify-content: flex-start;
+	}
+
+	#mailing-list-signup {
+		flex-direction: column;
+	}
+
+	/* Footer Section */
+	footer {
+		padding-left: 15%;
+		padding-right: 10%;
+	}
+
+	#footer-title {
+		font-size: 0.8rem;
+	}
+
+	.footer-detail {
+		font-size: 0.6rem;
+	}
+}
