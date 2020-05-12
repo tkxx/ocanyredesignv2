@@ -30,22 +30,29 @@ class NewsPage extends React.Component {
 	};
 
 	render() {
-		let newsTitle = this.state.newsContent.map((newsContent, index) => {
-			return <div key={index}>{newsContent.title.rendered}</div>;
-		});
-
-		let newsContent = this.state.newsContent.map((newsContent, index) => {
-			return <div key={index}>{newsContent.content.rendered}</div>;
-		});
-
-		let newsExcerpt = this.state.newsContent.map((newsContent, index) => {
-			return <div key={index}>{newsContent.excerpt.rendered}</div>;
-		});
-
 		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
 			return (
 				<div key={index}>
 					<img src={newsImage.media_details.sizes.medium.source_url} alt={newsImage.caption.alt_text} />
+				</div>
+			);
+		});
+
+		let newsPost = this.state.newsContent.map((newsContent, index) => {
+			return (
+				<div className="news-content-paragraphs" key={index}>
+					<h1>{newsContent.title.rendered}</h1>
+					<div className="news-photo">{newsPhoto}</div>
+					<p
+						className="news-content-excerpt"
+						dangerouslySetInnerHTML={{ __html: newsContent.excerpt.rendered }}
+					/>
+					<p
+						className="news-content-text"
+						dangerouslySetInnerHTML={{ __html: newsContent.content.rendered }}
+					/>
+
+					<Link to="/news/:slug">Read More</Link>
 				</div>
 			);
 		});
@@ -57,13 +64,7 @@ class NewsPage extends React.Component {
 				</section>
 				<section id="news-body">
 					<div className="news-posts">
-						<div>
-							<h1>{newsTitle}</h1>
-							{newsExcerpt}
-							{newsPhoto}
-							{newsContent}
-							<Link to="/news/:slug">Read More</Link>
-						</div>
+						<div>{newsPost}</div>
 					</div>
 				</section>
 			</React.Fragment>
