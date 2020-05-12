@@ -10,24 +10,14 @@ function MissionPage(props) {
 				</h1>
 			</section>
 			<section id="mission-body">
-				<h2 className="accent-color">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua.
-				</h2>
+				<h2 className="accent-color" />
 				<p className="programs-div-excerpt">
-					Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Massa tincidunt dui ut ornare
-					lectus sit amet est placerat. A scelerisque purus semper eget duis. Interdum varius sit amet mattis.
-					Iaculis urna id volutpat lacus laoreet non curabitur gravida. Arcu ac tortor dignissim convallis
-					aenean. Rutrum tellus pellentesque eu tincidunt tortor. Sapien et ligula ullamcorper malesuada proin
-					libero nunc. Pellentesque sit amet porttitor eget dolor morbi.{' '}
+					Founded in 1973, OCA Asian Pacific American Advocates is a national non-profit civil rights
+					organization promoting and protecting the political, economic, and cultural rights of Asian Pacific
+					Americans in America. We are interested in working with anyone who shares our mission of creating a
+					stronger America by advocating for the values of equal liberty and justice for all.
 				</p>
-				<p className="programs-div-excerpt">
-					Arcu ac tortor dignissim convallis aenean. Amet mattis vulputate enim nulla aliquet porttitor lacus
-					luctus accumsan. Convallis aenean et tortor at risus viverra adipiscing. Eget magna fermentum
-					iaculis eu non. Et leo duis ut diam quam. Consectetur libero id faucibus nisl tincidunt eget nullam
-					non nisi. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Amet
-					facilisis magna etiam tempor orci eu. Sagittis vitae et leo duis ut diam quam nulla.
-				</p>
+				<p className="programs-div-excerpt" />
 			</section>
 		</React.Fragment>
 	);

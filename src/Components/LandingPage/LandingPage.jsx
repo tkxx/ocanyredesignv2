@@ -154,15 +154,25 @@ class LandingPage extends React.Component {
 						<ul className="bullet-margin">
 							<li className="sm-bulletpoints">
 								<img src={facebookIcon} alt="facebook icon" className="social-media-icons" />{' '}
-								<a>@OCANY_CHAPTER</a>
+								<a
+									href="https://www.facebook.com/ocany.chapter"
+									alt-text="facebook link"
+									target="_blank"
+								>
+									@OCANY.CHAPTER
+								</a>
 							</li>
 							<li className="sm-bulletpoints">
 								<img src={twitterIcon} alt="twitter icon" className="social-media-icons" />
-								<a>@OCANEWYORK</a>
+								<a href="https://twitter.com/ocanewyork" alt-text="twitter link" target="_blank">
+									@OCANEWYORK
+								</a>
 							</li>
 							<li className="sm-bulletpoints">
 								<img src={mailIcon} alt="mail icon" className="social-media-icons" />
-								<a>info@ocany.org</a>
+								<a href="mailto: info@ocany.org" alt-text="email link" target="_blank">
+									INFO@OCA-NY.ORG
+								</a>
 							</li>
 						</ul>
 					</div>
