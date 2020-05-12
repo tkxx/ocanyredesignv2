@@ -12,8 +12,8 @@ class NewsPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://http://167.71.250.204//wp-json/wp/v2/news';
-		let newsPic = 'http://http://167.71.250.204//wp-json/wp/v2/media';
+		let newsURL = 'http://167.71.250.204//wp-json/wp/v2/news';
+		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
@@ -58,7 +58,7 @@ class NewsPage extends React.Component {
 				<section id="news-body">
 					<div className="news-posts">
 						<div>
-							{newsTitle}
+							<h1>{newsTitle}</h1>
 							{newsExcerpt}
 							{newsPhoto}
 							{newsContent}

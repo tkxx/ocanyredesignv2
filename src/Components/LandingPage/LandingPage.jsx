@@ -18,8 +18,8 @@ class LandingPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://http://167.71.250.204//wp-json/wp/v2/news';
-		let newsPic = 'http://http://167.71.250.204//wp-json/wp/v2/media';
+		let newsURL = 'http://167.71.250.204//wp-json/wp/v2/news';
+		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
@@ -47,7 +47,7 @@ class LandingPage extends React.Component {
 		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
 			return (
 				<div key={index}>
-					<img src={newsImage.media_details.sizes.full.source_url} alt={newsImage.caption.alt_text} />
+					<img src={newsImage.media_details.sizes.medium.source_url} alt={newsImage.caption.alt_text} />
 				</div>
 			);
 		});

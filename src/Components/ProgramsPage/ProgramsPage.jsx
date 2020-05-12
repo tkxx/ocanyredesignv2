@@ -12,25 +12,16 @@ class ProgramsPage extends React.Component {
 		};
 	}
 
-	// componentDidMount() {
-	// 	let programsURL = 'http://localhost:8888/ynaco/wp-json/wp/v2/programs';
-	// 	fetch(programsURL).then((response) => response.json()).then((response) => {
-	// 		console.log(response);
-	// 		this.setState({
-	// 			programs: response
-	// 		});
-	// 	});
-	// }
-
+	componentDidMount = () => {
+		let programsURL = 'http://167.71.250.204//wp-json/wp/v2/programs';
+		fetch(programsURL).then((response) => response.json()).then((response) => {
+			console.log(response);
+			this.setState({
+				programs: response
+			});
+		});
+	};
 	render() {
-		// let programsTitle = this.state.programs.map((programs, index) => {
-		// 	return <div key={index}>{programs.title.rendered}</div>;
-		// });
-
-		// let programsExcerpt = this.state.programs.map((programs, index) => {
-		// 	return <div key={index}>{programs.excerpt.rendered}</div>;
-		// });
-
 		return (
 			<React.Fragment>
 				<section id="programs-header">
