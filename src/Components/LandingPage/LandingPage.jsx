@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import voteIcon from '../../images/voteIcon.svg';
 import heartIcon from '../../images/heartIcon.svg';
 import talkIcon from '../../images/talkicon.svg';
@@ -66,7 +67,9 @@ class LandingPage extends React.Component {
 							organization promoting and protecting the political, economic, and cultural rights of Asian
 							Pacific Americans in America.
 						</p>
-						<button>Learn More</button>
+						<button>
+							<Link to="/mission">Learn More</Link>
+						</button>
 					</div>
 				</section>
 

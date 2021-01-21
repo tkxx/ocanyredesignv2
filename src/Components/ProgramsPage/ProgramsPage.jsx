@@ -38,9 +38,10 @@ class ProgramsPage extends React.Component {
 								Voter Outreach
 							</h3>
 							<p className="programs-div-excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
-								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
+								Every summer, OCA-NY participates in a voter outreach campaign that includes door
+								knocking, phone banking, and in-person voter registration. We are committed to informing
+								the Asian Pacific American community of their right and privilege, and making sure that
+								our voices are heard in the American political system.
 							</p>
 							<p>
 								<a>Read More</a>
@@ -58,9 +59,9 @@ class ProgramsPage extends React.Component {
 								Hate Crimes Prevention Art Project
 							</h3>
 							<p className="programs-div-excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
-								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
+								OCA-NY is looking for a college student or recent college graduate for a full-time
+								summer internship position to coordinate OCA-NY's 12th Annual Hate Crimes Prevention Art
+								Project. Now, more than ever, this Project is needed.
 							</p>
 							<p>
 								<a>Read More</a>
@@ -78,9 +79,8 @@ class ProgramsPage extends React.Component {
 								Mentoring A/P/A Professionals
 							</h3>
 							<p className="programs-div-excerpt">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra
-								mauris in aliquam sem. Massa tincidunt dui ut ornare lectus sit amet est placerat.
+								MAAP IS CULTIVATING THE NEXT GENERATION OF ASIAN AMERICAN & PACIFIC ISLANDER
+								PROFESSIONALS THROUGH MENTORING, SKILLS BUILDING, AND NETWORKING!
 							</p>
 							<p>
 								<a>Read More</a>

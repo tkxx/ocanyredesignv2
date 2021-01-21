@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SingleNewsPost from '../SingleNewsPost/SingleNewsPost';
 import '../NewsPage/newsPage.css';
 
 class NewsPage extends React.Component {
@@ -7,13 +8,14 @@ class NewsPage extends React.Component {
 		super();
 		this.state = {
 			newsContent: [],
-			newsImage: []
+			newsImage: [],
+			isLoaded: false
 		};
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://167.71.250.204//wp-json/wp/v2/news';
-		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
+		let newsURL = 'http://167.71.250.204/wp-json/wp/v2/news';
+		let newsPic = 'http://167.71.250.204/wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
@@ -30,6 +32,15 @@ class NewsPage extends React.Component {
 	};
 
 	render() {
+		// const { newsContent, newsImage, isLoaded } = this.state;
+		// console.log(this.state);
+		// if (isLoaded) {
+		// 	return (
+		// 		<div>
+		// 			{newsContent.map((singlePost) => <SingleNewsPost key={singlePost.id} singlePost={singlePost} />)}
+		// 		</div>
+		// );
+
 		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
 			return (
 				<div key={index}>
@@ -51,8 +62,7 @@ class NewsPage extends React.Component {
 						className="news-content-text"
 						dangerouslySetInnerHTML={{ __html: newsContent.content.rendered }}
 					/>
-
-					<Link to="/news/:slug">Read More</Link>
+					<Link to="/news/:slug">Read More</Link>;
 				</div>
 			);
 		});
