@@ -19,7 +19,7 @@ class LandingPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://167.71.250.204//wp-json/wp/v2/news';
+		let newsURL = 'http://104.131.186.195/wp-json/wp/v2/posts';
 		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
