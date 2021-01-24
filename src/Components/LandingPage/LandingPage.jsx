@@ -6,6 +6,7 @@ import talkIcon from '../../images/talkicon.svg';
 import facebookIcon from '../../images/facebook.svg';
 import twitterIcon from '../../images/twitter.svg';
 import mailIcon from '../../images/mail.svg';
+import testrwp from '../../data/ipa.js';
 import './landingPage.css';
 
 class LandingPage extends React.Component {
@@ -19,7 +20,7 @@ class LandingPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = 'http://104.131.186.195/wp-json/wp/v2/posts';
+		let newsURL = `${testrwp}/wp-json/wp/v2/posts`;
 		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
 		fetch(newsURL).then((response) => response.json()).then((response) => {
 			console.log(response);
