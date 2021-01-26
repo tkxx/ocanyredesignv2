@@ -1,81 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SingleNewsPost from '../SingleNewsPost/SingleNewsPost';
+import testrwp from '../../data/ipa.js'
 import '../NewsPage/newsPage.css';
 
 class NewsPage extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			newsContent: [],
-			newsImage: [],
-			isLoaded: false
+			posts: []
 		};
 	}
 
-	componentDidMount = () => {
-		let newsURL = 'http://167.71.250.204/wp-json/wp/v2/news';
-		let newsPic = 'http://167.71.250.204/wp-json/wp/v2/media';
-		fetch(newsURL).then((response) => response.json()).then((response) => {
-			console.log(response);
+	componentDidMount() {
+		let allBlogPosts = 'https://jsonplaceholder.typicode.com/users/1/posts';
+		fetch(allBlogPosts).then(response => {
 			this.setState({
-				newsContent: response
-			});
-		});
+				blogPosts: response.data
+			})
+		})
+		.catch(err => console.log(err))
+	}
 
-		fetch(newsPic).then((response) => response.json()).then((response) => {
-			console.log(response);
-			this.setState({
-				newsImage: response
-			});
-		});
-	};
 
 	render() {
-		// const { newsContent, newsImage, isLoaded } = this.state;
-		// console.log(this.state);
-		// if (isLoaded) {
-		// 	return (
-		// 		<div>
-		// 			{newsContent.map((singlePost) => <SingleNewsPost key={singlePost.id} singlePost={singlePost} />)}
-		// 		</div>
-		// );
-
-		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
+		let newsPosts = this.state.posts.map(post => {
 			return (
-				<div key={index}>
-					<img src={newsImage.media_details.sizes.medium.source_url} alt={newsImage.caption.alt_text} />
+				<div>
+					<SingleNewsPost post={post}/>
 				</div>
-			);
-		});
-
-		let newsPost = this.state.newsContent.map((newsContent, index) => {
-			return (
-				<div className="news-content-paragraphs" key={index}>
-					<h1>{newsContent.title.rendered}</h1>
-					<div className="news-photo">{newsPhoto}</div>
-					<p
-						className="news-content-excerpt"
-						dangerouslySetInnerHTML={{ __html: newsContent.excerpt.rendered }}
-					/>
-					<p
-						className="news-content-text"
-						dangerouslySetInnerHTML={{ __html: newsContent.content.rendered }}
-					/>
-					<Link to="/news/:slug">Read More</Link>;
-				</div>
-			);
-		});
+			)
+		})
 
 		return (
 			<React.Fragment>
 				<section id="news-header">
-					<h1 className="header-titles news-page-title">News</h1>
-				</section>
-				<section id="news-body">
-					<div className="news-posts">
-						<div>{newsPost}</div>
-					</div>
+				{newsPosts}
 				</section>
 			</React.Fragment>
 		);

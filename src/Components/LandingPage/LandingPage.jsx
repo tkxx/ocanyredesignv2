@@ -6,7 +6,6 @@ import talkIcon from '../../images/talkicon.svg';
 import facebookIcon from '../../images/facebook.svg';
 import twitterIcon from '../../images/twitter.svg';
 import mailIcon from '../../images/mail.svg';
-import testrwp from '../../data/ipa.js';
 import './landingPage.css';
 
 class LandingPage extends React.Component {
@@ -20,39 +19,21 @@ class LandingPage extends React.Component {
 	}
 
 	componentDidMount = () => {
-		let newsURL = `${testrwp}/wp-json/wp/v2/posts`;
-		let newsPic = 'http://167.71.250.204//wp-json/wp/v2/media';
-		fetch(newsURL).then((response) => response.json()).then((response) => {
+		let featurePost = 'https://jsonplaceholder.typicode.com/users/1/posts';
+		fetch(featurePost).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
-				newsTitle: response
+				newsTitle: response.data
 			});
 		});
 
-		fetch(newsPic).then((response) => response.json()).then((response) => {
-			console.log(response);
-			this.setState({
-				newsImage: response
-			});
-		});
 	};
 
 	render() {
-		let newsTitle = this.state.newsTitle.map((newsTitle, index) => {
-			return <div key={index}>{newsTitle.title.rendered}</div>;
-		});
+		// let newsTitle = this.state.newsTitle.map((newsTitle, index) => {
+		// 	return <div key={index}>{newsTitle.title.rendered}</div>;
+		// });
 
-		let newsExcerpt = this.state.newsExcerpt.map((newsExcerpt, index) => {
-			return <div key={index}>{newsTitle.caption.rendered}</div>;
-		});
-
-		let newsPhoto = this.state.newsImage.map((newsImage, index) => {
-			return (
-				<div key={index}>
-					<img src={newsImage.media_details.sizes.medium.source_url} alt={newsImage.caption.alt_text} />
-				</div>
-			);
-		});
 
 		return (
 			<React.Fragment>
@@ -117,10 +98,9 @@ class LandingPage extends React.Component {
 				<section id="latest-news-section">
 					<h2 id="news-title">Latest News</h2>
 					<span id="picture-and-description">
-						<div id="landing-news-photo">{newsPhoto}</div>
+			
 						<div id="inner-p-d">
-							<p className="news-title">{newsTitle}</p>
-							<p className="news-excerpt">{newsExcerpt}</p>
+							{/* <p className="news-title">{newsTitle}</p> */}
 						</div>
 					</span>
 				</section>
