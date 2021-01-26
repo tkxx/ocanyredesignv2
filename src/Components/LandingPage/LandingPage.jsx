@@ -12,9 +12,8 @@ class LandingPage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			newsImage: [],
-			newsTitle: [],
-			newsExcerpt: []
+			title: [],
+			excerpt: []
 		};
 	}
 
@@ -23,17 +22,21 @@ class LandingPage extends React.Component {
 		fetch(featurePost).then((response) => response.json()).then((response) => {
 			console.log(response);
 			this.setState({
-				newsTitle: response.data
+				title: response,
+				excerpt: response
 			});
 		});
 
 	};
 
 	render() {
-		// let newsTitle = this.state.newsTitle.map((newsTitle, index) => {
-		// 	return <div key={index}>{newsTitle.title.rendered}</div>;
-		// });
+		let blogTitle = this.state.title.map((title, index) => {
+			return <h4 key={index}>{title.title}</h4>;
+		});
 
+		let blogBody = this.state.excerpt.map((body, index) => {
+			return <div key={index}>{body.body}</div>
+		})
 
 		return (
 			<React.Fragment>
@@ -98,9 +101,9 @@ class LandingPage extends React.Component {
 				<section id="latest-news-section">
 					<h2 id="news-title">Latest News</h2>
 					<span id="picture-and-description">
-			
+						{blogTitle}
 						<div id="inner-p-d">
-							{/* <p className="news-title">{newsTitle}</p> */}
+							{blogBody}
 						</div>
 					</span>
 				</section>

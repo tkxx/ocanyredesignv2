@@ -5,7 +5,7 @@ function SingleNewsPost(props) {
 	return (
 		<React.Fragment>
 			<p>{id}</p>
-			<p>{title}</p>
+			<h4>{title}</h4>
 			<p>{body}</p>
 		</React.Fragment>
 	)

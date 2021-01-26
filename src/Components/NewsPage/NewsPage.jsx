@@ -1,42 +1,52 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SingleNewsPost from '../SingleNewsPost/SingleNewsPost';
-import testrwp from '../../data/ipa.js'
 import '../NewsPage/newsPage.css';
 
 class NewsPage extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			posts: []
+			id: [],
+			title: [],
+			excerpt: []
 		};
 	}
 
-	componentDidMount() {
-		let allBlogPosts = 'https://jsonplaceholder.typicode.com/users/1/posts';
-		fetch(allBlogPosts).then(response => {
+	componentDidMount = () => {
+		let allPosts = 'https://jsonplaceholder.typicode.com/users/1/posts';
+		fetch(allPosts).then((response) => response.json()).then((response) => {
+			console.log(response);
 			this.setState({
-				blogPosts: response.data
-			})
-		})
-		.catch(err => console.log(err))
-	}
+
+				title: response,
+				excerpt: response
+			});
+		});
+
+	};
 
 
 	render() {
-		let newsPosts = this.state.posts.map(post => {
+		let headline = this.state.title.map((headline, index) => {
 			return (
-				<div>
-					<SingleNewsPost post={post}/>
-				</div>
+				<>
+					<h3 key={index}>{headline.title}</h3>
+				</>
+			)
+		})
+
+		let excerpts = this.state.excerpt.map((blog, index) => {
+			return (
+				<p key={index}>{blog.body}</p>
 			)
 		})
 
 		return (
 			<React.Fragment>
-				<section id="news-header">
-				{newsPosts}
-				</section>
+				{headline}
+				{excerpts}
+				
 			</React.Fragment>
 		);
 	}
